@@ -1,0 +1,26 @@
+.nav-list-row{
+    display: flex;
+    gap: 10px;
+    color: black;
+}
+
+.nav-menu-box{
+    position: absolute; 
+    z-index: 1;
+    top: 80px; 
+    right: 10px; 
+    width: fit-content;
+    background-color: white; 
+    box-shadow: none; 
+}
+
+.nav-page-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.nav-page-link:hover{
+    color: blue;
+    font-weight: 700;
+}
