@@ -11,7 +11,7 @@ export default function HomePage() {
         <header>
         <div class="header-article">
           <h1>CRAFTING EXCELLENCE IN</h1>
-          <b>PRINTING, PACKAGING, & BEYOND</b>
+          <b style={{ fontSize: 24}}>PRINTING, PACKAGING, & BEYOND</b>
           <p>Altrapac Sdn. Bhd. was founded by Mr. Wong Choon Fooi & Partner in April 1994 and it has grown from its humble beginning since then. Altrapac is located in Butterworth, Penang with over 30 years of experience. 
           </p>
         </div>
@@ -79,7 +79,7 @@ export default function HomePage() {
         <div class="contact-section-right">
           <Typography variant='h1' sx={{ fontWeight: 700}}>Get In</Typography>
           <div class="contact-row">
-            <Button variant='contained' >Read Me</Button>&emsp;
+            <Button variant='contained' >Contact Us</Button>&emsp;
             <Typography variant='h3' sx={{ fontWeight: 700}}>Touch</Typography>
           </div>
         </div>

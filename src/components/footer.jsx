@@ -1,5 +1,7 @@
 import React from 'react'
 import './footer.css'
+import { Mail, Phone } from '@mui/icons-material'
+import { Divider } from '@mui/material'
 
 export default function Footer() {
   return (
@@ -21,12 +23,18 @@ export default function Footer() {
         </div>
         <div class="index-page-right">
             <div class="manufacturing-address">
-            <b>Manufacturing</b>
-            <p>No 9, Lorong Sungai Lokan 3/2, Kawasan Perindustrian Sungai Lokan, 13800 Butterworth, Penang, Malaysia.</p>
+            <b style={{ fontSize: 22}}>Manufacturing</b>
+            <div style={{ marginTop: 10}}>No 9, Lorong Sungai Lokan 3/2, Kawasan Perindustrian Sungai Lokan, 13800 Butterworth, Penang, Malaysia.</div>
             </div>
-            <div class="manufacturing-contact">
-            <b>Contact</b>
-            <div>P: +6 019 622 6422 | T: +6 04 356 4055 | E: e.altrapac@gmail.com</div>
+            <div class="manufacturing-contact" style={{ marginTop: 20}}>
+            <b style={{ fontSize: 22}}>Contact</b>
+            <div style={{ display: 'flex', alignItems: 'center', marginTop: 10}}>
+                <Phone/>: +6 019 622 6422 
+                &emsp;<Divider orientation="vertical" flexItem sx={{borderColor: 'black'}}/>&emsp;
+                <Phone/>: +6 04 356 4055
+                &emsp;<Divider orientation="vertical" flexItem sx={{borderColor: 'black'}}/>&emsp;
+                <Mail/>: e.altrapac@gmail.com
+            </div>
             </div>
         </div>
         <div class="index-copyright-row">
