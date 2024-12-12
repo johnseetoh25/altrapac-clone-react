@@ -1,0 +1,7 @@
+.logo-img-filter{
+    filter: grayscale(1);    
+}
+
+.logo-img-filter:hover{
+    filter: grayscale(0);
+}

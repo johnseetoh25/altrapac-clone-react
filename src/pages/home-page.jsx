@@ -4,6 +4,7 @@ import { ServiceList } from '../libs/data'
 import Footer from '../components/footer'
 import AboutList from '../components/about-list'
 import { Button, Typography } from '@mui/material'
+import Carousel from '../components/carousel'
 
 export default function HomePage() {
   const [ yearCount, setYearCount ] = useState(0);
@@ -72,7 +73,7 @@ export default function HomePage() {
       </section>
       </div>
 
-      
+      <Carousel/>
 
       <section class="service-section">
         <div class="serive-grid-layout">

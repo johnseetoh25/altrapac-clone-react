@@ -33,7 +33,7 @@ export default function Footer() {
                 &emsp;<Divider orientation="vertical" flexItem sx={{borderColor: 'black'}}/>&emsp;
                 <Phone/>: +6 04 356 4055
                 &emsp;<Divider orientation="vertical" flexItem sx={{borderColor: 'black'}}/>&emsp;
-                <Mail/>: e.altrapac@gmail.com
+                <Mail/>: altrapac@gmail.com
             </div>
             </div>
         </div>
