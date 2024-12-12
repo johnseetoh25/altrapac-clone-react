@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <div>
-        <AppBar sx={{bgcolor: 'lightgray', padding: 0, paddingX: 5 }}>
+        <AppBar sx={{bgcolor: 'lightgray', padding: 0, paddingX: 5, boxShadow: 'none' }}>
             <Toolbar sx={{ width: '100%' ,display: 'flex', justifyContent: 'space-between' }}>
                 <Box>
                     <img src={'/logo.png'} alt="logo" />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './home-page.css'
 import { ServiceList } from '../libs/data'
 import Footer from '../components/footer'
@@ -6,6 +6,28 @@ import AboutList from '../components/about-list'
 import { Button, Typography } from '@mui/material'
 
 export default function HomePage() {
+  const [ yearCount, setYearCount ] = useState(0);
+  const [ customerCount, setCustomerCount ] = useState(0);
+
+  useEffect(() => {
+    if (yearCount>=30) { return; }
+    const interval = setInterval(() => {
+      setYearCount(yearCount + 1 );
+    }, 500);
+
+    return () => { clearInterval(interval); }
+  }, [yearCount] );
+
+  useEffect(() => {
+    if (customerCount>=1246) { return; }
+    const interval = setInterval(() => {
+      setCustomerCount(customerCount + 1)
+    }, 5);
+
+    return () => { clearInterval(interval); }
+  }, [customerCount])
+  
+
   return (
     <div>
         <header>
@@ -38,17 +60,19 @@ export default function HomePage() {
             </div>
             <div class="float-panel">
               <div class="float-panel-left">
-                <span>30</span><div>Year Of Experience.</div>
+                <span>{yearCount}</span><div>Year Of Experience.</div>
               </div>
               <div class="vl"></div>
               <div class="float-panel-right">
-                <span>1246</span><div>Satisfaction Customer</div>
+                <span>{customerCount}</span><div>Satisfaction Customer</div>
               </div>
             </div>
           </div>
         </div>
       </section>
       </div>
+
+      
 
       <section class="service-section">
         <div class="serive-grid-layout">
